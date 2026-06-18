@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocolo Choro Zero — Guia para Pais de Primeira Viagem</title>
+<meta name="description" content="Entenda o choro do seu bebê e pare de entrar em desespero. Guia prático para pais de primeira viagem. R$27,90 — entrega imediata no WhatsApp.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --azul: #1B2A4A; --verde: #2CA4A0; --laranja: #F5A623; --branco: #FFFFFF; --cinza-claro: #F7F8FA; --cinza-texto: #5A6478; --fonte: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+  body { font-family: var(--fonte); color: var(--azul); background: var(--branco); line-height: 1.6; }
+  .hero { background: var(--azul); color: var(--branco); padding: 60px 20px 70px; text-align: center; }
+  .hero .tag { display: inline-block; background: var(--laranja); color: var(--azul); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 24px; }
+  .hero h1 { font-size: clamp(26px, 5vw, 44px); font-weight: 800; line-height: 1.2; max-width: 700px; margin: 0 auto 20px; }
+  .hero h1 span { color: var(--laranja); }
+  .hero p { font-size: clamp(16px, 2.5vw, 20px); color: rgba(255,255,255,0.80); max-width: 560px; margin: 0 auto 36px; }
+  .btn-primary { display: inline-block; background: var(--laranja); color: var(--azul); font-size: 17px; font-weight: 800; padding: 16px 36px; border-radius: 50px; text-decoration: none; transition: opacity 0.2s; }
+  .btn-primary:hover { opacity: 0.88; }
+  .hero .sub-cta { margin-top: 14px; font-size: 13px; color: rgba(255,255,255,0.55); }
+  .dor { background: var(--cinza-claro); padding: 60px 20px; text-align: center; }
+  .dor h2 { font-size: clamp(20px, 3.5vw, 30px); font-weight: 700; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .dor-lista { display: flex; flex-direction: column; gap: 14px; max-width: 540px; margin: 0 auto 36px; text-align: left; }
+  .dor-item { background: var(--branco); border-left: 4px solid var(--laranja); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 15px; color: var(--azul); }
+  .dor-fechamento { font-size: 17px; font-weight: 700; color: var(--azul); max-width: 500px; margin: 0 auto; }
+  .reframe { background: var(--verde); color: var(--branco); padding: 60px 20px; text-align: center; }
+  .reframe h2 { font-size: clamp(22px, 4vw, 36px); font-weight: 800; max-width: 640px; margin: 0 auto 20px; line-height: 1.25; }
+  .reframe p { font-size: clamp(15px, 2.5vw, 18px); color: rgba(255,255,255,0.88); max-width: 580px; margin: 0 auto; line-height: 1.7; }
+  .produto { padding: 64px 20px; text-align: center; }
+  .produto h2 { font-size: clamp(20px, 3.5vw, 30px); font-weight: 700; margin-bottom: 8px; }
+  .produto .sub { color: var(--cinza-texto); font-size: 15px; margin-bottom: 40px; }
+  .items-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; max-width: 800px; margin: 0 auto 48px; text-align: left; }
+  .item-card { background: var(--cinza-claro); border-radius: 12px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
+  .item-icon { width: 40px; height: 40px; background: var(--azul); color: var(--branco); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .item-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .item-card p { font-size: 13px; color: var(--cinza-texto); line-height: 1.5; }
+  .como { background: var(--cinza-claro); padding: 60px 20px; text-align: center; }
+  .como h2 { font-size: clamp(20px, 3.5vw, 28px); font-weight: 700; margin-bottom: 36px; }
+  .passos { display: flex; flex-direction: column; gap: 16px; max-width: 500px; margin: 0 auto; text-align: left; }
+  .passo { display: flex; gap: 16px; align-items: flex-start; background: var(--branco); padding: 18px; border-radius: 12px; }
+  .passo-num { width: 36px; height: 36px; background: var(--laranja); color: var(--azul); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; flex-shrink: 0; }
+  .passo h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .passo p { font-size: 13px; color: var(--cinza-texto); }
+  .preco { background: var(--azul); color: var(--branco); padding: 64px 20px; text-align: center; }
+  .preco h2 { font-size: clamp(22px, 4vw, 34px); font-weight: 800; margin-bottom: 12px; line-height: 1.2; }
+  .preco .valor { font-size: clamp(40px, 8vw, 64px); font-weight: 900; color: var(--laranja); line-height: 1; margin: 20px 0 8px; }
+  .preco .valor-desc { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 32px; }
+  .preco .checklist { list-style: none; max-width: 420px; margin: 0 auto 36px; text-align: left; }
+  .preco .checklist li { padding: 7px 0; font-size: 15px; display: flex; gap: 10px; color: rgba(255,255,255,0.88); }
+  .preco .checklist li::before { content: "✓"; color: var(--verde); font-weight: 800; flex-shrink: 0; }
+  .garantia { margin-top: 20px; font-size: 13px; color: rgba(255,255,255,0.50); }
+  .faq { padding: 60px 20px; max-width: 640px; margin: 0 auto; }
+  .faq h2 { font-size: clamp(20px, 3.5vw, 28px); font-weight: 700; margin-bottom: 32px; text-align: center; }
+  .faq-item { border-bottom: 1px solid #E5E8EF; padding: 18px 0; }
+  .faq-item h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: var(--azul); }
+  .faq-item p { font-size: 14px; color: var(--cinza-texto); line-height: 1.6; }
+  footer { background: var(--cinza-claro); text-align: center; padding: 24px 20px; font-size: 12px; color: var(--cinza-texto); }
+  @media (max-width: 480px) { .items-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="tag">Para pais de primeira viagem</div>
+  <h1>Seu bebê chora e você <span>não sabe o que fazer.</span><br>Isso vai mudar.</h1>
+  <p>O Protocolo Choro Zero te ensina a linguagem do seu filho — para você parar de entrar em desespero toda vez que ele chora.</p>
+  <a href="CHECKOUT_URL" class="btn-primary">Quero entender meu bebê →</a>
+  <p class="sub-cta">R$27,90 · Entrega imediata · Pix ou cartão</p>
+</section>
+<section class="dor">
+  <h2>Você se identifica com alguma dessas situações?</h2>
+  <div class="dor-lista">
+    <div class="dor-item">São 3h da manhã, seu bebê chora, você tentou tudo e nada funcionou.</div>
+    <div class="dor-item">Você oferece o peito, troca a fralda, dá colo — e o choro continua.</div>
+    <div class="dor-item">No fundo, um pensamento te corrói: "será que estou errando?"</div>
+    <div class="dor-item">Você fica em pânico sem saber se é fome, cólica, dor ou se é algo mais sério.</div>
+    <div class="dor-item">Você sente que todo mundo sabe o que fazer — menos você.</div>
+  </div>
+  <p class="dor-fechamento">Se você marcou qualquer uma dessas, este guia foi feito para você.</p>
+</section>
+<section class="reframe">
+  <h2>Você não está errando.<br>Você só não foi ensinado a linguagem do seu filho.</h2>
+  <p>Nenhum bebê vem com manual. E ninguém te preparou para interpretar um ser que só se comunica chorando. O choro do seu bebê tem padrões — e quando você aprende a reconhecê-los, tudo muda.</p>
+</section>
+<section class="produto">
+  <h2>O que você vai encontrar no Protocolo Choro Zero</h2>
+  <p class="sub">Um guia de 18 páginas pensado para ser consultado às 3h da manhã com uma mão só.</p>
+  <div class="items-grid">
+    <div class="item-card"><div class="item-icon">🎵</div><div><h3>Os 5 tipos de choro</h3><p>Fome, sono, cólica, colo e superestimulação — como reconhecer cada um pelo som e comportamento.</p></div></div>
+    <div class="item-card"><div class="item-icon">❓</div><div><h3>O Método das 3 Perguntas</h3><p>Um protocolo simples que te dá um ponto de partida lógico ao invés de pânico.</p></div></div>
+    <div class="item-card"><div class="item-icon">👁️</div><div><h3>Sinais antes do choro</h3><p>Como identificar fome, sono e desconforto antes de virar choro — e agir no tempo certo.</p></div></div>
+    <div class="item-card"><div class="item-icon">😣</div><div><h3>Cólica — o que funciona</h3><p>O que realmente ajuda, o que não funciona e o que nunca fazer.</p></div></div>
+    <div class="item-card"><div class="item-icon">⚠️</div><div><h3>Sinais de alerta médico</h3><p>Quando o choro indica algo mais sério e você precisa procurar atendimento imediato.</p></div></div>
+    <div class="item-card"><div class="item-icon">📋</div><div><h3>Tabela de consulta rápida</h3><p>Referência visual para consultar em segundos.</p></div></div>
+    <div class="item-card"><div class="item-icon">💛</div><div><h3>Cuide de você também</h3><p>Saúde mental dos pais e sinais de esgotamento.</p></div></div>
+  </div>
+</section>
+<section class="como">
+  <h2>Como funciona</h2>
+  <div class="passos">
+    <div class="passo"><div class="passo-num">1</div><div><h3>Clique no botão abaixo</h3><p>Você vai direto para o checkout.</p></div></div>
+    <div class="passo"><div class="passo-num">2</div><div><h3>Faça o pagamento</h3><p>Pix ou cartão. R$27,90. Rápido e seguro.</p></div></div>
+    <div class="passo"><div class="passo-num">3</div><div><h3>Receba o guia na hora</h3><p>O PDF chega imediatamente, disponível para sempre.</p></div></div>
+  </div>
+</section>
+<section class="preco">
+  <h2>Tudo isso por menos do que<br>uma pizza delivery.</h2>
+  <div class="valor">R$27,90</div>
+  <p class="valor-desc">pagamento único · sem mensalidade · seu para sempre</p>
+  <ul class="checklist">
+    <li>Guia completo de 18 páginas</li>
+    <li>Os 5 tipos de choro explicados</li>
+    <li>O Método das 3 Perguntas</li>
+    <li>Tabela de consulta rápida</li>
+    <li>Sinais de alerta médico</li>
+    <li>Entrega imediata</li>
+  </ul>
+  <a href="CHECKOUT_URL" class="btn-primary">Quero entender meu bebê →</a>
+  <p class="garantia">Pix ou cartão · Entrega imediata · Garantia de 7 dias</p>
+</section>
+<section class="faq">
+  <h2>Dúvidas frequentes</h2>
+  <div class="faq-item"><h3>O guia promete que meu bebê vai parar de chorar?</h3><p>Não — e qualquer produto que prometa isso está mentindo. O Protocolo Choro Zero te dá a capacidade de entender o que ele está dizendo — para você responder com calma.</p></div>
+  <div class="faq-item"><h3>Como recebo o guia?</h3><p>Após a confirmação do pagamento, o PDF é enviado imediatamente. Sem login, sem aplicativo.</p></div>
+  <div class="faq-item"><h3>Serve para bebês de qualquer idade?</h3><p>Desenvolvido para bebês de 0 a 12 meses, com foco nos primeiros 6 meses.</p></div>
+  <div class="faq-item"><h3>E se eu não gostar?</h3><p>7 dias para reembolso completo, sem perguntas.</p></div>
+  <div class="faq-item"><h3>É um produto com base científica?</h3><p>Sim. Baseado em estudos de desenvolvimento infantil e pediatria, em linguagem acessível.</p></div>
+</section>
+<section class="preco" style="padding: 48px 20px;">
+  <h2 style="font-size: clamp(18px, 3vw, 26px);">Seu bebê está te dizendo algo.<br>Está na hora de aprender a ouvir.</h2>
+  <br>
+  <a href="CHECKOUT_URL" class="btn-primary">Quero o Protocolo Choro Zero — R$27,90 →</a>
+  <p class="garantia" style="margin-top: 12px;">Entrega imediata · Garantia de 7 dias</p>
+</section>
+<footer>
+  <p>© 2025 Protocolo Choro Zero · Todos os direitos reservados</p>
+  <p style="margin-top: 6px;">Este produto não substitui orientação médica. Em caso de dúvida, consulte o pediatra.</p>
+</footer>
+</body>
+</html>
