@@ -27,10 +27,13 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1123583001963559');
+fbq('init', '475913216709140');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=475913216709140&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
@@ -59,17 +62,16 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
   .h-sec{font-size:25px;font-weight:900;text-align:center;}
   p{font-size:16px;}
 
-  .btn{display:block;width:100%;max-width:420px;margin:0 auto;background:linear-gradient(135deg,var(--salvia),var(--salvia-escura));
+  .btn{display:block;width:100%;max-width:420px;margin:0 auto;background:linear-gradient(135deg,#f97316,#ea6c08);
        color:#fff;text-decoration:none;text-align:center;font-size:18px;font-weight:800;padding:18px 20px;border-radius:14px;
-       box-shadow:0 10px 28px rgba(86,98,85,.38);animation:pulse 1.6s ease-in-out infinite;border:none;cursor:pointer;}
+       box-shadow:0 10px 28px rgba(249,115,22,.40);animation:pulse 1.6s ease-in-out infinite;border:none;cursor:pointer;}
   .btn small{display:block;font-size:12px;font-weight:600;opacity:.9;margin-top:3px;letter-spacing:.3px;}
-  @keyframes pulse{0%,100%{box-shadow:0 10px 28px rgba(86,98,85,.38),0 0 0 0 rgba(111,127,113,.5);}50%{box-shadow:0 12px 32px rgba(86,98,85,.45),0 0 0 14px rgba(111,127,113,0);}}
+  @keyframes pulse{0%,100%{box-shadow:0 10px 28px rgba(249,115,22,.40),0 0 0 0 rgba(249,115,22,.5);}50%{box-shadow:0 12px 32px rgba(249,115,22,.48),0 0 0 14px rgba(249,115,22,0);}}
   @media (prefers-reduced-motion:reduce){.btn{animation:none;}}
 
   /* HERO claro (opcao A) */
   .hero{background:var(--creme);color:var(--navy);text-align:center;padding:38px 22px 48px;}
-  .hero .medal{width:150px;height:150px;border-radius:50%;background:#fff;border:2px solid var(--bege);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,33,82,.07);}
-  .hero .medal img{width:122px;height:auto;}
+  .hero-mockup{width:230px;height:auto;margin:0 auto 24px;display:block;filter:drop-shadow(0 14px 36px rgba(0,33,82,.20));}
   .hero .tag{display:inline-block;background:var(--pessego);color:var(--salvia-escura);font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:18px;}
   .hero .h-main{color:var(--navy);font-size:31px;}
   .hero .h-main .accent{color:var(--salvia);display:block;}
@@ -171,6 +173,26 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
   .foot{background:var(--navy);color:#8fa0bb;text-align:center;padding:30px 22px;font-size:12px;}
   .foot a{color:#cdd9ea;}
 
+  .emoc-destaque{background:var(--navy);color:#fff;text-align:center;}
+  .eq{font-size:22px;font-weight:800;line-height:1.42;color:#fff;max-width:420px;margin:16px auto 0;font-style:italic;border:none;padding:0;}
+  .eq-fonte{font-size:12px;color:#aebfd6;margin-top:14px;letter-spacing:.5px;font-style:normal;}
+  .emoc-list{display:flex;flex-direction:column;gap:10px;max-width:440px;margin:26px auto 0;}
+  .emoc-item{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:14px 16px;text-align:left;}
+  .emoc-ic{flex:0 0 24px;height:24px;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;margin-top:2px;}
+  .emoc-item p{font-size:15px;color:#cdd9ea;line-height:1.5;}
+  .emoc-item b{color:#fff;}
+  .btn-emoc{display:block;width:100%;max-width:420px;margin:26px auto 0;background:rgba(255,255,255,.11);color:#fff;text-decoration:none;text-align:center;font-size:16px;font-weight:800;padding:15px 20px;border-radius:14px;border:2px solid rgba(255,255,255,.22);cursor:pointer;}
+  .btn-emoc small{display:block;font-size:11px;font-weight:600;opacity:.8;margin-top:3px;}
+
+  .btn-mid{display:block;width:100%;max-width:420px;margin:26px auto 0;background:linear-gradient(135deg,#f97316,#ea6c08);
+       color:#fff;text-decoration:none;text-align:center;font-size:16px;font-weight:800;padding:15px 20px;border-radius:14px;
+       box-shadow:0 8px 20px rgba(249,115,22,.34);border:none;cursor:pointer;}
+  .btn-mid small{display:block;font-size:11px;font-weight:600;opacity:.9;margin-top:3px;}
+  .preco-anchor-linha{color:var(--vermelho);text-decoration:line-through;font-size:15px;font-weight:700;margin:8px 0 2px;display:block;}
+  .produto-box{margin:0 auto 22px;text-align:center;}
+  .produto-box img{width:160px;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 10px 28px rgba(0,33,82,.18));}
+  .produto-box span{display:none;}
+
   @media (min-width:600px){
     body{padding:30px 18px;}
     .page{max-width:760px;border-radius:18px;box-shadow:0 20px 60px rgba(0,33,82,.16);}
@@ -187,10 +209,13 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
 
   <!-- S1 HERO (opcao A — claro) -->
   <section class="hero">
-    <div class="medal"><img src="logo_marca.png" alt="Choro Zero"></div>
+    <img src="mockup_sem_fundo.png" alt="Protocolo Choro Zero — Guia Digital" class="hero-mockup">
     <span class="tag">Para mães e pais de primeira viagem</span>
     <h1 class="h-main">Seu bebê chora e você não sabe o que fazer.<span class="accent">Isso vai mudar.</span></h1>
     <p class="sub">Em segundos, saiba se é fome, sono, cólica ou algo que precisa do pediatra — e aja com calma, mesmo às 3h da manhã.</p>
+    <div style="margin-top:28px">
+      <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn" onclick="fbq('track','InitiateCheckout');">Quero entender meu bebê <small>Acesso imediato · R$27,90</small></a>
+    </div>
   </section>
 
   <!-- S2 BASEADO EM -->
@@ -214,12 +239,26 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
       <div class="thought">"Já tentei de tudo e ele não para. Eu devo estar fazendo algo errado."</div>
       <div class="thought">"Todo mundo parece saber o que fazer, menos eu."</div>
     </div>
+    <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn-mid" onclick="fbq('track','InitiateCheckout');">Quero sair dessa agora <small>R$27,90 · acesso imediato</small></a>
   </section>
 
   <!-- S4 VIRADA -->
   <section class="sec virada">
     <h2>Você não está errando.<br><span>Você só não foi ensinada.</span></h2>
     <p>Nenhuma escola prepara para os primeiros meses. O choro é a única linguagem que o seu bebê tem — e ninguém te ensinou a entendê-la. O desespero que você sente não é fraqueza. É falta de informação. E isso tem solução.</p>
+  </section>
+
+  <!-- S4b VOCÊ TAMBÉM IMPORTA — DESTAQUE EMOCIONAL -->
+  <section class="sec emoc-destaque sec-overlap">
+    <p class="eyebrow" style="color:#aebfd6;">Este guia é para você também</p>
+    <blockquote class="eq">"Tudo bem estar exausto. Tudo bem estar frustrado. Tudo bem não ser o pai ou mãe perfeito. Você está aprendendo um idioma completamente novo — o idioma do seu filho."</blockquote>
+    <p class="eq-fonte">— Protocolo Choro Zero, capítulo <em>Cuide de Você Também</em></p>
+    <div class="emoc-list">
+      <div class="emoc-item"><span class="emoc-ic">✓</span><p><b>Sinais de burnout e depressão pós-parto</b> — o que você está sentindo tem nome, tem solução e não é culpa sua.</p></div>
+      <div class="emoc-item"><span class="emoc-ic">✓</span><p><b>Como pedir ajuda sem se sentir fraco</b> — sobreviver a essa fase é coletivo, não individual.</p></div>
+      <div class="emoc-item"><span class="emoc-ic">✓</span><p><b>Você já está fazendo um ótimo trabalho</b> — e isso está escrito aqui, esperando você ler quando mais precisar.</p></div>
+    </div>
+    <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn-emoc" onclick="fbq('track','InitiateCheckout');">Quero esse apoio também <small>R$27,90 · acesso imediato</small></a>
   </section>
 
   <!-- S5 BENEFÍCIOS -->
@@ -232,6 +271,7 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
       <div class="item"><span class="ic">✓</span><p><b>Sabe a hora de se preocupar</b> — e a hora de relaxar, porque é normal.</p></div>
       <div class="item"><span class="ic">✓</span><p><b>Recupera a confiança</b> de que está cuidando bem do seu filho.</p></div>
     </div>
+    <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn-mid" onclick="fbq('track','InitiateCheckout');">Quero esses resultados agora <small>R$27,90 · acesso imediato</small></a>
   </section>
 
   <!-- S6 PASSO A PASSO -->
@@ -248,14 +288,19 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
 
   <!-- S7 ENTREGÁVEIS -->
   <section class="sec sec-overlap" style="background:var(--creme)">
-    <p class="eyebrow">Veja o que vem dentro</p>
+    <p class="eyebrow">8 capítulos dentro do guia</p>
     <h2 class="h-sec">Tudo o que você recebe no Protocolo Choro Zero</h2>
     <div class="grid-bonus" style="margin-top:22px">
-      <div class="entreg"><div class="topo"><span class="emo">📘</span><div><span class="tagq">Guia principal</span><h4>Protocolo Choro Zero</h4></div></div><p>14 páginas diretas, sem enrolação. Por que o bebê chora, o que fazer e o que NÃO fazer.</p></div>
-      <div class="entreg"><div class="topo"><span class="emo">⚡</span><div><span class="tagq">Dentro do guia</span><h4>Tabela de Consulta Rápida</h4></div></div><p>Feita para usar às 3h da manhã, com uma mão só, no escuro. Salva no celular e consulta na hora.</p></div>
-      <div class="entreg"><div class="topo"><span class="emo">🔊</span><div><span class="tagq">Dentro do guia</span><h4>Mapa dos 5 Tipos de Choro</h4></div></div><p>Como cada choro soa, o sinal que aparece antes e a ação certa para cada um.</p></div>
-      <div class="entreg"><div class="topo"><span class="emo">🤱</span><div><span class="tagq">Dentro do guia</span><h4>Protocolo da Cólica</h4></div></div><p>A sequência do que funciona (com base em evidências) e a lista do que todo mundo tenta e não funciona.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">📘</span><div><span class="tagq">Guia completo</span><h4>Protocolo Choro Zero</h4></div></div><p>O protocolo central: identifique o choro em segundos, saiba o que fazer e o que NÃO fazer.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">⚡</span><div><span class="tagq">Consulta rápida</span><h4>Tabela de Identificação</h4></div></div><p>Tipo de choro → o que fazer. Feita para usar com uma mão só, no escuro, às 3h da manhã.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">🔊</span><div><span class="tagq">Capítulo</span><h4>Os 5 Tipos de Choro</h4></div></div><p>Como cada choro soa, o sinal que aparece antes dele e a resposta certa para cada situação.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">🤱</span><div><span class="tagq">Capítulo</span><h4>Protocolo da Cólica</h4></div></div><p>As 4 posições de alívio (Aviãozinho, Cavalinho, Massagem Abdominal, Compressa) e o que realmente funciona.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">📅</span><div><span class="tagq">Capítulo</span><h4>Desenvolvimento Mês a Mês</h4></div></div><p>O que esperar dos 0 aos 9 meses — para entender o choro dentro da fase certa do desenvolvimento.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">🌙</span><div><span class="tagq">Capítulo</span><h4>Sono do Bebê</h4></div></div><p>Ciclos de sono, rotinas e ambiente ideal. Por que ele acorda tanto — e como criar noites mais tranquilas.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">❤️</span><div><span class="tagq">Capítulo exclusivo</span><h4>Saúde Mental dos Pais</h4></div></div><p>Sinais de burnout e depressão pós-parto. Porque cuidar de você é também cuidar do seu filho.</p></div>
+      <div class="entreg"><div class="topo"><span class="emo">🍼</span><div><span class="tagq">Capítulo</span><h4>Amamentação vs. Mamadeira</h4></div></div><p>Dicas práticas para os dois métodos, sem julgamento. O que importa é que vocês dois estejam bem.</p></div>
     </div>
+    <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn-mid" onclick="fbq('track','InitiateCheckout');">Quero tudo isso agora <small>R$27,90 · acesso imediato · 30 dias de garantia</small></a>
   </section>
 
   <!-- S8 É PRA VOCÊ -->
@@ -281,8 +326,10 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
   <!-- S10 PREÇO -->
   <section class="sec preco">
     <div class="preco-card">
+      <div class="produto-box"><img src="mockup_sem_fundo.png" alt="Protocolo Choro Zero"><span>Protocolo Choro Zero</span></div>
       <p class="nome">Protocolo Choro Zero</p>
       <p class="preco-de">Acesso completo, pagamento único:</p>
+      <span class="preco-anchor-linha">De R$ 67,00</span>
       <p class="preco-real"><small>R$</small> 27,90</p>
       <p class="preco-obs">à vista ou parcelado no cartão</p>
       <p class="preco-anc">menos que uma pizza, pra finalmente entender o seu bebê</p>
@@ -291,7 +338,7 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
     </div>
     <div class="garantia-box">
       <div class="shield">🛡️</div>
-      <div><h4>7 dias de garantia incondicional</h4><p>Se não for pra você, devolvemos 100% do valor. Sem perguntas, sem burocracia. O risco é todo nosso.</p></div>
+      <div><h4>30 dias de garantia incondicional</h4><p>Se não for pra você, devolvemos 100% do valor. Sem perguntas, sem burocracia. O risco é todo nosso.</p></div>
     </div>
   </section>
 
@@ -330,7 +377,7 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
   <!-- S13 CTA FINAL -->
   <section class="sec ctaf sec-overlap">
     <h2>Entenda o seu bebê hoje à noite</h2>
-    <p>Acesso imediato. Pagamento único de R$27,90. Garantia de 7 dias.</p>
+    <p>Acesso imediato. Pagamento único de R$27,90. Garantia de 30 dias.</p>
     <a href="https://pay.kiwify.com.br/yvOJ5dZ" class="btn" onclick="fbq('track','InitiateCheckout');">Quero o Protocolo Choro Zero <small>R$27,90 · acesso imediato</small></a>
   </section>
 
@@ -339,7 +386,7 @@ src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></
     <h2 class="h-sec" style="margin-bottom:22px">Perguntas frequentes</h2>
     <div class="faq-wrap">
       <details class="faq-item" open><summary>Como eu recebo o material?</summary><p class="resp">Assim que o pagamento é aprovado, você recebe o acesso por e-mail para baixar o PDF na hora. Fica salvo com você para sempre.</p></details>
-      <details class="faq-item"><summary>E se não funcionar pra mim?</summary><p class="resp">Você tem 7 dias de garantia incondicional. Se não for pra você, é só pedir o reembolso — devolvemos 100% do valor, sem perguntas.</p></details>
+      <details class="faq-item"><summary>E se não funcionar pra mim?</summary><p class="resp">Você tem 30 dias de garantia incondicional. Se não for pra você, é só pedir o reembolso — devolvemos 100% do valor, sem perguntas.</p></details>
       <details class="faq-item"><summary>Como funciona o pagamento?</summary><p class="resp">Pagamento único de R$27,90, sem mensalidade. Cartão, Pix ou boleto, em ambiente seguro da Kiwify.</p></details>
       <details class="faq-item"><summary>Isso substitui o pediatra?</summary><p class="resp">Não. O Protocolo te ajuda a entender o choro do dia a dia e mostra exatamente os sinais de alerta em que você deve procurar o pediatra. Ele complementa o acompanhamento médico, não substitui.</p></details>
       <details class="faq-item"><summary>Serve para qual idade do bebê?</summary><p class="resp">O conteúdo é focado nos primeiros meses (0 a 6 meses), quando o choro é a principal forma de comunicação do bebê.</p></details>
