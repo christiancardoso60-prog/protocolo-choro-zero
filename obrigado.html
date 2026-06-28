@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compra confirmada — Protocolo Choro Zero</title>
+<meta name="robots" content="noindex">
+
+<!-- UTMify Tracking -->
+<script>
+  window.pixelId = "6a395d29f36c1ea9abe5b03f";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/utms/latest.js");
+  document.head.appendChild(a);
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1123583001963559');
+fbq('init', '475913216709140');
+fbq('track', 'PageView');
+// Purchase NÃO é disparado aqui — a venda já é enviada pelo servidor (Kiwify CAPI / UTMify). Disparar no navegador contaria a mesma venda 2x.
+</script>
+<!-- End Meta Pixel Code -->
+
+<!-- Microsoft Clarity -->
 <script type="text/javascript">
 (function(c,l,a,r,i,t,y){
 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -8,121 +41,128 @@ t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "xe5mtx9zpd");
 </script>
-<meta charset="UTF-8">
-<title>Obrigado — Protocolo Choro Zero</title>
-<meta name="robots" content="noindex,nofollow">
-<script>
-window.pixelId = "6a395d29f36c1ea9abe5b03f";
-var a = document.createElement("script");
-a.setAttribute("async","");a.setAttribute("defer","");
-a.setAttribute("src","https://cdn.utmify.com.br/scripts/utms/latest.js");
-document.head.appendChild(a);
-</script>
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','1123583001963559');fbq('init','475913216709140');
-fbq('trackSingle','1123583001963559','Purchase',{value:47.90,currency:'BRL'});
-fbq('trackSingle','475913216709140','Purchase',{value:47.90,currency:'BRL'});
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1123583001963559&ev=Purchase&noscript=1"/></noscript>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=475913216709140&ev=Purchase&noscript=1"/></noscript>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{--creme:#FDFBF7;--bege:#D9CFC2;--salvia:#6F7F71;--salvia-escura:#566255;--pessego:#FAECD1;--navy:#002152;--texto-suave:#5b6470;--fonte:'Segoe UI',system-ui,-apple-system,sans-serif;}
-html{scroll-behavior:smooth;}
-body{font-family:var(--fonte);color:var(--navy);background:var(--bege);line-height:1.6;-webkit-font-smoothing:antialiased;}
-img{max-width:100%;display:block;}
-.page{max-width:480px;margin:0 auto;background:var(--creme);overflow:hidden;}
-.sec{position:relative;width:100%;padding:46px 22px;}
-.sec-overlap{margin-top:-22px;border-radius:26px 26px 0 0;}
-.eyebrow{font-size:11px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--salvia);text-align:center;margin-bottom:10px;}
-h1,h2,h3{line-height:1.22;letter-spacing:-.01em;}
-.h-sec{font-size:25px;font-weight:900;text-align:center;}
-p{font-size:16px;}
-.btn{display:block;width:100%;max-width:420px;margin:0 auto;background:linear-gradient(135deg,#f97316,#ea6c08);color:#fff;text-decoration:none;text-align:center;font-size:18px;font-weight:800;padding:18px 20px;border-radius:14px;box-shadow:0 10px 28px rgba(249,115,22,.40);border:none;cursor:pointer;}
-.hero-obg{background:var(--navy);color:#fff;text-align:center;padding:52px 22px 58px;}
-.hero-obg .check{width:72px;height:72px;border-radius:50%;background:var(--salvia);color:#fff;font-size:36px;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;}
-.hero-obg h1{color:#fff;font-size:28px;font-weight:900;margin-bottom:14px;}
-.hero-obg p{color:#cdd9ea;font-size:16px;max-width:380px;margin:0 auto;}
-.acesso{background:var(--pessego);}
-.acesso-card{background:#fff;border-radius:20px;padding:28px 22px;max-width:420px;margin:0 auto;box-shadow:0 12px 32px rgba(0,33,82,.10);border:1px solid var(--bege);text-align:center;}
-.acesso-card .emo{font-size:42px;margin-bottom:14px;}
-.acesso-card h2{font-size:20px;font-weight:900;margin-bottom:10px;color:var(--navy);}
-.acesso-card p{font-size:15px;color:var(--texto-suave);margin-bottom:20px;}
-.audio-sec{background:var(--creme);}
-.audio-card{background:#fff;border:1px solid var(--bege);border-radius:18px;padding:24px 20px;max-width:420px;margin:0 auto;box-shadow:0 6px 18px rgba(0,33,82,.07);}
-.audio-card .topo{display:flex;align-items:center;gap:14px;margin-bottom:16px;}
-.audio-card .ic-audio{flex:0 0 48px;height:48px;border-radius:50%;background:var(--salvia);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;}
-.audio-card h3{font-size:17px;font-weight:800;color:var(--navy);}
-.audio-card .sub-audio{font-size:13px;color:var(--texto-suave);}
-.audio-card p.desc{font-size:14.5px;color:var(--texto-suave);margin-bottom:16px;}
-audio{width:100%;border-radius:10px;accent-color:var(--salvia);}
-.passos-sec{background:var(--bege);}
-.lista{display:flex;flex-direction:column;gap:12px;max-width:440px;margin:0 auto;}
-.item{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--bege);border-radius:14px;padding:14px 16px;box-shadow:0 4px 14px rgba(0,33,82,.05);}
-.item .ic{flex:0 0 26px;height:26px;border-radius:50%;background:var(--salvia);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;margin-top:1px;}
-.item p{font-size:15.5px;}
-.item b{color:var(--navy);}
-.garantia-box{display:flex;gap:16px;align-items:center;background:#fff;border:2px solid var(--salvia);border-radius:18px;padding:18px 20px;max-width:440px;margin:22px auto 0;box-shadow:0 8px 22px rgba(86,98,85,.16);}
-.garantia-box .shield{flex:0 0 54px;height:54px;border-radius:50%;background:var(--salvia);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;}
-.garantia-box h4{font-size:16px;font-weight:800;margin-bottom:3px;}
-.garantia-box p{font-size:13.5px;color:var(--texto-suave);}
-.foot{background:var(--navy);color:#8fa0bb;text-align:center;padding:30px 22px;font-size:12px;}
-.foot a{color:#cdd9ea;}
-@media (min-width:600px){body{padding:30px 18px;}.page{max-width:760px;border-radius:18px;box-shadow:0 20px 60px rgba(0,33,82,.16);}}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --creme:#FDFBF7;--bege:#D9CFC2;--salvia:#6F7F71;--salvia-escura:#566255;
+    --pessego:#FAECD1;--navy:#002152;--vermelho:#C0492F;--texto-suave:#5b6470;
+    --fonte:'Segoe UI',system-ui,-apple-system,'Helvetica Neue',sans-serif;
+  }
+  body{font-family:var(--fonte);color:var(--navy);background:var(--bege);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  .page{max-width:480px;margin:0 auto;background:var(--creme);min-height:100vh;}
+  .sec{padding:34px 22px;}
+  h1,h2,h3{line-height:1.22;letter-spacing:-.01em;}
+  .btn{display:block;width:100%;max-width:420px;margin:0 auto;text-decoration:none;text-align:center;font-size:17px;font-weight:800;padding:16px 18px;border-radius:14px;border:none;cursor:pointer;}
+  .btn small{display:block;font-size:12px;font-weight:600;opacity:.9;margin-top:3px;}
+  .btn-salvia{background:linear-gradient(135deg,var(--salvia),var(--salvia-escura));color:#fff;box-shadow:0 10px 26px rgba(86,98,85,.34);}
+  .btn-laranja{background:linear-gradient(135deg,#f97316,#ea6c08);color:#fff;box-shadow:0 10px 28px rgba(249,115,22,.40);animation:pulse 1.6s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{box-shadow:0 10px 28px rgba(249,115,22,.40),0 0 0 0 rgba(249,115,22,.5);}50%{box-shadow:0 12px 32px rgba(249,115,22,.48),0 0 0 14px rgba(249,115,22,0);}}
+  @media (prefers-reduced-motion:reduce){.btn-laranja{animation:none;}}
+
+  .topo{background:linear-gradient(160deg,#013066,#002152 70%);color:#fff;text-align:center;padding:46px 22px 40px;}
+  .check{width:78px;height:78px;border-radius:50%;background:var(--salvia);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:40px;color:#fff;box-shadow:0 8px 26px rgba(86,98,85,.5);}
+  .topo .tag{display:inline-block;background:var(--pessego);color:var(--salvia-escura);font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:16px;}
+  .topo h1{font-size:29px;font-weight:900;}
+  .topo p{color:#cdd9ea;font-size:16px;margin-top:12px;max-width:400px;margin-left:auto;margin-right:auto;}
+
+  .acesso{padding:36px 22px;}
+  .acesso h2{font-size:21px;font-weight:900;text-align:center;margin-bottom:8px;}
+  .acesso .lead{text-align:center;color:var(--texto-suave);font-size:15px;max-width:400px;margin:0 auto 22px;}
+  .passos{display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto 24px;}
+  .pitem{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--bege);border-radius:14px;padding:14px 16px;box-shadow:0 4px 14px rgba(0,33,82,.05);}
+  .pitem .n{flex:0 0 28px;height:28px;border-radius:50%;background:var(--salvia);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;}
+  .pitem p{font-size:15px;}
+  .pitem b{color:var(--navy);}
+  .nota{text-align:center;font-size:13px;color:#8a8275;max-width:400px;margin:14px auto 0;}
+
+  .oferta{background:var(--pessego);padding:40px 22px;text-align:center;}
+  .oferta .selo{display:inline-block;background:var(--vermelho);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:14px;}
+  .oferta h2{font-size:24px;font-weight:900;max-width:420px;margin:0 auto 6px;}
+  .oferta h2 span{color:var(--salvia-escura);}
+  .oferta .desc{color:#4a4233;font-size:15px;max-width:400px;margin:0 auto 20px;}
+  .card-pod{background:#fff;border:1px solid var(--bege);border-radius:18px;padding:22px;max-width:420px;margin:0 auto 20px;box-shadow:0 12px 32px rgba(0,33,82,.10);text-align:left;}
+  .card-pod .topo-pod{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .card-pod .ico{flex:0 0 54px;height:54px;border-radius:14px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;}
+  .card-pod h3{font-size:18px;font-weight:900;}
+  .card-pod .sub{font-size:13px;color:var(--texto-suave);}
+  .benef{list-style:none;display:flex;flex-direction:column;gap:8px;margin:0 0 16px;}
+  .benef li{font-size:14px;color:var(--texto-suave);display:flex;gap:8px;align-items:flex-start;}
+  .benef li b{color:var(--navy);}
+  .preco-pod{text-align:center;margin-bottom:6px;}
+  .preco-pod .de{font-size:13px;color:var(--texto-suave);}
+  .preco-pod .de s{color:var(--vermelho);}
+  .preco-pod .val{font-size:34px;font-weight:900;color:var(--salvia-escura);line-height:1;}
+  .recusa{display:block;text-align:center;margin-top:16px;font-size:13px;color:#8a8275;text-decoration:underline;}
+
+  .rodape{background:var(--navy);color:#8fa0bb;text-align:center;padding:28px 22px;font-size:12px;}
+  .rodape a{color:#cdd9ea;}
+
+  @media (min-width:600px){
+    body{padding:30px 18px;}
+    .page{max-width:680px;border-radius:18px;overflow:hidden;min-height:auto;box-shadow:0 20px 60px rgba(0,33,82,.16);}
+  }
 </style>
 </head>
 <body>
 <div class="page">
-<section class="hero-obg">
-  <div class="check">✓</div>
-  <h1>Compra confirmada!<br>Bem-vindo ao Protocolo Choro Zero</h1>
-  <p>Seu acesso foi liberado. Você vai receber o link por e-mail em instantes — verifique também a caixa de spam.</p>
-</section>
-<section class="sec acesso sec-overlap">
-  <p class="eyebrow">Seu material está pronto</p>
-  <h2 class="h-sec">Acesse agora</h2>
-  <div class="acesso-card" style="margin-top:22px">
-    <div class="emo">📘</div>
-    <h2>Protocolo Choro Zero — PDF Completo</h2>
-    <p>Clique no botão abaixo para acessar sua área de membros e baixar todos os materiais incluídos na sua compra.</p>
-    <a href="https://kiwify.app/login" class="btn" style="margin-top:4px">Acessar minha área de membros</a>
-  </div>
-  <div class="garantia-box">
-    <div class="shield">🛡️</div>
-    <div><h4>Garantia de 30 dias ativa</h4><p>Se precisar, é só entrar em contato. Devolvemos 100% do valor, sem perguntas.</p></div>
-  </div>
-</section>
-<section class="sec audio-sec sec-overlap">
-  <p class="eyebrow">Bônus exclusivo</p>
-  <h2 class="h-sec" style="margin-bottom:22px">Áudio: Os 5 Tipos de Choro</h2>
-  <div class="audio-card">
-    <div class="topo">
-      <div class="ic-audio">🔊</div>
-      <div><h3>Reconheça pelo som</h3><span class="sub-audio">Áudio de referência rápida</span></div>
+
+  <!-- CONFIRMAÇÃO -->
+  <section class="topo">
+    <div class="check">✓</div>
+    <span class="tag">Pagamento confirmado</span>
+    <h1>Deu tudo certo! Bem-vinda ao Choro Zero.</h1>
+    <p>Sua compra foi aprovada e o seu acesso já está liberado. A partir de agora, você não está mais sozinha nas madrugadas.</p>
+  </section>
+
+  <!-- COMO ACESSAR -->
+  <section class="acesso">
+    <h2>Como acessar agora</h2>
+    <p class="lead">Seu material já está disponível. Veja como abrir:</p>
+    <div class="passos">
+      <div class="pitem"><span class="n">1</span><p><b>Confira seu e-mail.</b> Enviamos o acesso para o e-mail usado na compra (olhe também a caixa de spam/promoções).</p></div>
+      <div class="pitem"><span class="n">2</span><p><b>Entre na sua área de membros</b> da Kiwify com esse mesmo e-mail — é lá que fica todo o conteúdo.</p></div>
+      <div class="pitem"><span class="n">3</span><p><b>Baixe e salve no celular.</b> A Tabela de Consulta Rápida foi feita pra usar às 3h da manhã, com uma mão só.</p></div>
     </div>
-    <p class="desc">Ouça como cada tipo de choro soa na prática — fome, sono, cólica, desconforto e alerta. Use como referência quando precisar.</p>
-    <audio controls preload="none">
-      <source src="audio-5-tipos-choro.mp3" type="audio/mpeg">
-      Seu navegador não suporta o player de áudio.
-    </audio>
-  </div>
-</section>
-<section class="sec passos-sec sec-overlap">
-  <p class="eyebrow">O que fazer agora</p>
-  <h2 class="h-sec" style="margin-bottom:22px">Seus próximos passos</h2>
-  <div class="lista">
-    <div class="item"><span class="ic">1</span><p><b>Verifique seu e-mail</b> — o link de acesso foi enviado agora (confira também o spam).</p></div>
-    <div class="item"><span class="ic">2</span><p><b>Baixe o PDF principal</b> na sua área de membros e salve no celular para acesso offline.</p></div>
-    <div class="item"><span class="ic">3</span><p><b>Ouça o áudio acima</b> para se familiarizar com os 5 tipos de choro — leva menos de 5 minutos.</p></div>
-    <div class="item"><span class="ic">4</span><p><b>Deixe o PDF aberto no celular</b> antes de dormir — assim você tem o protocolo na mão quando precisar.</p></div>
-  </div>
-</section>
-<footer class="foot">
-  <p><strong>Protocolo Choro Zero</strong> · Guia digital · R$47,90</p>
-  <p style="margin-top:8px">Dúvidas? Entre em contato pelo e-mail de confirmação da sua compra.</p>
-  <p style="margin-top:8px">© 2026 Choro Zero</p>
-</footer>
+    <a href="https://members.kiwify.com/" class="btn btn-salvia" target="_blank" rel="noopener">Acessar minha área de membros <small>Entre com o e-mail da compra</small></a>
+    <p class="nota">Não recebeu o e-mail em alguns minutos? Fale com a gente em christiancardoso60@gmail.com.</p>
+  </section>
+
+  <!-- OFERTA: PODCAST / AUDIOBOOK -->
+  <section class="oferta">
+    <span class="selo">Oferta só desta página</span>
+    <h2>Que tal <span>ouvir</span> em vez de ler?</h2>
+    <p class="desc">Você nem sempre tem as mãos livres ou luz pra ler. Por isso criamos a versão em áudio do Protocolo.</p>
+
+    <div class="card-pod">
+      <div class="topo-pod">
+        <div class="ico">🎧</div>
+        <div>
+          <h3>Protocolo Choro Zero em Áudio</h3>
+          <p class="sub">O guia completo narrado, episódio por episódio</p>
+        </div>
+      </div>
+      <ul class="benef">
+        <li>🌙 <span><b>Mãos livres, no escuro:</b> ouça embalando o bebê, sem precisar acender a luz nem segurar o celular.</span></li>
+        <li>🔁 <span><b>Fixa de verdade:</b> reescute os 5 tipos de choro e o Método das 3 Perguntas até virar automático.</span></li>
+        <li>🚗 <span><b>Aproveite qualquer momento:</b> no carro, amamentando, na caminhada — vira conhecimento sem roubar seu tempo.</span></li>
+      </ul>
+      <div class="preco-pod">
+        <p class="de">De <s>R$ 37,00</s> por apenas:</p>
+        <p class="val">R$ 19,90</p>
+      </div>
+      <a href="https://pay.kiwify.com.br/T1MuaFc" class="btn btn-laranja">Sim, quero ouvir também <small>Adicionar à minha compra</small></a>
+      <a href="https://members.kiwify.com/" class="recusa">Não, obrigada — quero só o guia em PDF</a>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p><strong>Protocolo Choro Zero</strong> · Obrigado pela confiança 💙</p>
+    <p style="margin-top:8px">Dúvidas? Fale com christiancardoso60@gmail.com. Em sinais de alerta com o bebê, procure o pediatra ou a UPA. Apoio emocional: CVV 188 (24h).</p>
+  </footer>
+
 </div>
 </body>
 </html>
