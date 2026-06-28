@@ -39,9 +39,10 @@ fbq('trackSingle', '1123583001963559', 'PageView');fbq('trackSingle', '475913216
     currency: 'BRL'
   });
 
-  // InitiateCheckout — dispara ao clicar em qualquer botão de compra
+  // InitiateCheckout — remove o onclick antigo (evita 2x) e dispara 1x no 1123
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('a[href*="kiwify"]').forEach(function (botao) {
+      botao.removeAttribute('onclick');
       botao.addEventListener('click', function () {
         fbq('trackSingle', '1123583001963559', 'InitiateCheckout', {
           content_name: 'Protocolo Choro Zero',
