@@ -30,6 +30,29 @@ fbq('init', '1123583001963559');
 fbq('init', '475913216709140');
 fbq('trackSingle', '1123583001963559', 'PageView');fbq('trackSingle', '475913216709140', 'PageView');
 </script>
+<script>
+  // ViewContent — dispara quando a página carrega
+  fbq('trackSingle', '1123583001963559', 'ViewContent', {
+    content_name: 'Protocolo Choro Zero',
+    content_type: 'product',
+    value: 47.90,
+    currency: 'BRL'
+  });
+
+  // InitiateCheckout — dispara ao clicar em qualquer botão de compra
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="kiwify"]').forEach(function (botao) {
+      botao.addEventListener('click', function () {
+        fbq('trackSingle', '1123583001963559', 'InitiateCheckout', {
+          content_name: 'Protocolo Choro Zero',
+          content_type: 'product',
+          value: 47.90,
+          currency: 'BRL'
+        });
+      });
+    });
+  });
+</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1123583001963559&ev=PageView&noscript=1"/></noscript>
 <noscript><img height="1" width="1" style="display:none"
